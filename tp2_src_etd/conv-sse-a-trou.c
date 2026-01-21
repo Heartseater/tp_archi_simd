@@ -75,8 +75,8 @@ void YCrCb_to_ARGB(uint8_t *YCrCb_MCU[3], uint32_t *RGB_MCU, uint32_t nb_MCU_H, 
    const __m128 v1_7772 = _mm_set1_ps(1.7772f);
 
    MCU_Y  = YCrCb_MCU[0];
-   MCU_Cb = YCrCb_MCU[1];
-   MCU_Cr = YCrCb_MCU[2];
+   MCU_Cr = YCrCb_MCU[1];
+   MCU_Cb = YCrCb_MCU[2];
 
    for (i = 0; i < 8 * nb_MCU_V; i++) {
       for (j = 0; j < 8 * nb_MCU_H; j += 4) {
